@@ -1,0 +1,8 @@
+I created a web db app just in case. Basically, very minimal UI lng ito just to display data from the db. Done na ung record management which includes displaying and filtering data (If may time, will add updating and deleting data). Credits to my CS-ST friend who is taking STSWENG and STADVDB for teachning me how to do this via node js. If you guys want to test this out, follow the steps below:
+
+1) Download latest version of node js.
+2) Configure environmental variables to include node js directory.
+3) Open the program via VS CODE.
+4) Change db.js configuration based on your mysql credentials.
+5) Run this command: node backend/index.js
+6) Click on the link on the terminal

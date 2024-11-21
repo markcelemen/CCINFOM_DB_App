@@ -1,5 +1,5 @@
 I created a web db app just in case. Basically, very minimal UI lng ito just to display data from the db. Done na ung record management which includes displaying and filtering data (If may time, will add updating 
-and deleting data). Will finish transactions and records later. Credits to my CS-ST friend who is taking STSWENG and STADVDB for teaching me how to do this via node js. If you guys want to test this out, 
+and deleting data). Will finish transactions and reports later. Credits to my CS-ST friend who is taking STSWENG and STADVDB for teaching me how to do this via node js. If you guys want to test this out, 
 follow the steps below:
 
 1) Download latest version of node js.

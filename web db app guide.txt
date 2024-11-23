@@ -6,4 +6,4 @@ Steps to run the Web DB App Project:
 4) Change db.js configuration based on your mysql credentials.
 5) Make sure mysql workbench and server is open.
 6) Run this command: node backend/index.js
-7) Click on the link on the terminal
+7) Click the link on the terminal

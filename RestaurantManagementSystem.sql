@@ -5,7 +5,7 @@ USE RestaurantManagementSystem;
 -- Create the Menu Item Table
 CREATE TABLE MenuItem (
     item_id INT AUTO_INCREMENT PRIMARY KEY,
-    item_name VARCHAR(100) NOT NULL,
+    item_name VARCHAR(50) NOT NULL,
     description TEXT,
     price DECIMAL(10, 2) NOT NULL,
     category VARCHAR(50),
@@ -28,7 +28,7 @@ CREATE TABLE Customer (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     last_name VARCHAR(50) NOT NULL,
     first_name VARCHAR(50) NOT NULL,
-    contact_info VARCHAR(100)
+    contact_info VARCHAR(50)
 );
 
 -- Create the Orders Table

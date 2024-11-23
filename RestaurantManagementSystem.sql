@@ -9,8 +9,7 @@ CREATE TABLE MenuItem (
     description TEXT,
     price DECIMAL(10, 2) NOT NULL,
     category VARCHAR(50),
-    inventory INT DEFAULT 0,
-    status ENUM('A', 'O') DEFAULT 'A' 
+    inventory INT DEFAULT 0
 );
 
 
@@ -54,27 +53,27 @@ CREATE TABLE OrderItem (
 );
 
 -- Insert values to MenuItem Table
-INSERT INTO MenuItem (item_name, description, price, category, inventory, status) VALUES
-('Cheeseburger', 'A juicy beef patty with melted cheese, lettuce, and tomato.', 8.99, 'Main Course', 50, 'A'),
-('Caesar Salad', 'Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.', 7.49, 'Appetizer', 30, 'A'),
-('Margherita Pizza', 'Classic pizza with mozzarella, basil, and tomato sauce.', 12.99, 'Main Course', 40, 'A'),
-('Spaghetti Bolognese', 'Pasta served with a rich beef and tomato sauce.', 13.49, 'Main Course', 35, 'A'),
-('Chicken Wings', 'Spicy buffalo wings served with blue cheese dressing.', 9.99, 'Appetizer', 60, 'A'),
-('Chocolate Lava Cake', 'Rich chocolate cake with a molten center, served with vanilla ice cream.', 6.99, 'Dessert', 25, 'A'),
-('Margarita', 'A refreshing cocktail with tequila, lime, and triple sec.', 5.99, 'Drinks', 15, 'A'),
-('Iced Tea', 'Chilled black tea with lemon and a touch of sweetness.', 2.49, 'Drinks', 50, 'A'),
-('Tiramisu', 'Coffee-flavored Italian dessert made with layers of mascarpone and cocoa.', 4.99, 'Dessert', 30, 'A'),
-('Vegetable Stir-Fry', 'Mixed vegetables sautéed in soy sauce and served with rice.', 10.99, 'Main Course', 45, 'A'),
-('Grilled Salmon', 'Fresh salmon fillet grilled to perfection with a lemon butter sauce.', 14.99, 'Main Course', 20, 'A'),
-('Beef Tacos', 'Seasoned ground beef in soft corn tortillas with fresh toppings.', 6.99, 'Main Course', 40, 'A'),
-('Vegetarian Pizza', 'A pizza loaded with fresh vegetables and mozzarella cheese.', 11.99, 'Main Course', 35, 'A'),
-('Shrimp Cocktail', 'Chilled shrimp served with a tangy cocktail sauce.', 8.49, 'Appetizer', 30, 'A'),
-('Fried Calamari', 'Crispy fried squid rings served with marinara dipping sauce.', 7.99, 'Appetizer', 25, 'A'),
-('Mushroom Risotto', 'Creamy risotto with sautéed mushrooms and Parmesan cheese.', 11.49, 'Main Course', 40, 'A'),
-('BBQ Ribs', 'Tender baby back ribs slathered in smoky barbecue sauce.', 15.99, 'Main Course', 25, 'A'),
-('Vanilla Milkshake', 'Classic milkshake made with vanilla ice cream and topped with whipped cream.', 4.49, 'Drinks', 50, 'A'),
-('Lemon Sorbet', 'A refreshing and tangy frozen dessert made with fresh lemon juice.', 3.99, 'Dessert', 20, 'A'),
-('Apple Pie', 'Homemade apple pie with a flaky crust and a scoop of vanilla ice cream.', 5.49, 'Dessert', 30, 'A');
+INSERT INTO MenuItem (item_name, description, price, category, inventory) VALUES
+('Cheeseburger', 'A juicy beef patty with melted cheese, lettuce, and tomato.', 8.99, 'Main Course', 50),
+('Caesar Salad', 'Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.', 7.49, 'Appetizer', 30),
+('Margherita Pizza', 'Classic pizza with mozzarella, basil, and tomato sauce.', 12.99, 'Main Course', 40),
+('Spaghetti Bolognese', 'Pasta served with a rich beef and tomato sauce.', 13.49, 'Main Course', 35),
+('Chicken Wings', 'Spicy buffalo wings served with blue cheese dressing.', 9.99, 'Appetizer', 60),
+('Chocolate Lava Cake', 'Rich chocolate cake with a molten center, served with vanilla ice cream.', 6.99, 'Dessert', 25),
+('Margarita', 'A refreshing cocktail with tequila, lime, and triple sec.', 5.99, 'Drinks', 15),
+('Iced Tea', 'Chilled black tea with lemon and a touch of sweetness.', 2.49, 'Drinks', 50),
+('Tiramisu', 'Coffee-flavored Italian dessert made with layers of mascarpone and cocoa.', 4.99, 'Dessert', 30),
+('Vegetable Stir-Fry', 'Mixed vegetables sautéed in soy sauce and served with rice.', 10.99, 'Main Course', 45),
+('Grilled Salmon', 'Fresh salmon fillet grilled to perfection with a lemon butter sauce.', 14.99, 'Main Course', 20),
+('Beef Tacos', 'Seasoned ground beef in soft corn tortillas with fresh toppings.', 6.99, 'Main Course', 40),
+('Vegetarian Pizza', 'A pizza loaded with fresh vegetables and mozzarella cheese.', 11.99, 'Main Course', 35),
+('Shrimp Cocktail', 'Chilled shrimp served with a tangy cocktail sauce.', 8.49, 'Appetizer', 30),
+('Fried Calamari', 'Crispy fried squid rings served with marinara dipping sauce.', 7.99, 'Appetizer', 25),
+('Mushroom Risotto', 'Creamy risotto with sautéed mushrooms and Parmesan cheese.', 11.49, 'Main Course', 40),
+('BBQ Ribs', 'Tender baby back ribs slathered in smoky barbecue sauce.', 15.99, 'Main Course', 25),
+('Vanilla Milkshake', 'Classic milkshake made with vanilla ice cream and topped with whipped cream.', 4.49, 'Drinks', 50),
+('Lemon Sorbet', 'A refreshing and tangy frozen dessert made with fresh lemon juice.', 3.99, 'Dessert', 20),
+('Apple Pie', 'Homemade apple pie with a flaky crust and a scoop of vanilla ice cream.', 5.49, 'Dessert', 30);
 
 -- Insert values to Employee Table
 INSERT INTO Employee (last_name, first_name, position, salary) VALUES

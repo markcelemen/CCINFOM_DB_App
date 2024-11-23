@@ -3,7 +3,6 @@ CREATE DATABASE RestaurantManagementSystem;
 USE RestaurantManagementSystem;
 
 -- Create the Menu Item Table
--- Create the Menu Item Table
 CREATE TABLE MenuItem (
     item_id INT AUTO_INCREMENT PRIMARY KEY,
     item_name VARCHAR(100) NOT NULL,

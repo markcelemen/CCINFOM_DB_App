@@ -54,7 +54,6 @@ CREATE TABLE OrderItem (
 );
 
 -- Insert values to MenuItem Table
--- Inserting data into MenuItem table (added inventory)
 INSERT INTO MenuItem (item_name, description, price, category, inventory, status) VALUES
 ('Cheeseburger', 'A juicy beef patty with melted cheese, lettuce, and tomato.', 8.99, 'Main Course', 50, 'A'),
 ('Caesar Salad', 'Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.', 7.49, 'Appetizer', 30, 'A'),
